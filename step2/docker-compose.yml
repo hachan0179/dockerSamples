@@ -2,9 +2,9 @@ version: '3'
 services:
   bottle-app:
     build: ./bottle-app
-    image: ubuntu
+    image: bottle-app
     container_name: bottle-app-container
     ports:
       - "8080:80"
     volumes:
-      - ./volumes/bottle-app/:/opt/
+      - ./volumes/bottle-app/:/opt/bottle-app/
