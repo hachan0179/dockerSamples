@@ -11,7 +11,7 @@ app = bottle.Bottle()
 @app.route('/')
 def index():
     return '''
-        <h1>Hello,World!</h1>    
+        <h1>[Step1] Hello,World!</h1>    
     '''
 
 if(__name__=='__main__'):
