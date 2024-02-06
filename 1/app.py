@@ -9,7 +9,6 @@ RELOADER = True
 
 app = bottle.Bottle()
 
-
 @app.route('/')
 def index():
     return '''
