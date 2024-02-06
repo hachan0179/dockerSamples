@@ -2,7 +2,7 @@ import bottle
 
 # CONFIG
 
-PORT = 8080
+PORT = 80
 HOST = '0.0.0.0'
 DEBUG = True
 RELOADER = True
