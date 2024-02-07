@@ -4,6 +4,7 @@
 - step1.単一のdockerfileを使って作ったコンテナを立ち上げる
 - step2.step1で作成したコンテナをdocker-composeを使って立ち上げる
 - step3.step2で作成したdocker-composeにmysqlのコンテナを追加して、コンテナ間で通信をさせる
+- step4.さらにnginxをリバースプロキシとして導入し、通信を中継させる。
 
 # 使用ライブラリなど
 - bottle (pythonのwebフレームワーク)
