@@ -33,3 +33,6 @@ docker-compose up -d
 docker-compose down
 ```
 起動しているコンテナを停止できます。
+
+## 立ち上がりの確認
+ビルドしたdokcerイメージを起動したあと、ブラウザやcurlなどで、http://localhost:8080/ にアクセスするとHelloWorldが返ってきます。

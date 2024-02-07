@@ -32,3 +32,6 @@ docker-compose up -d
 docker-compose down
 ```
 起動しているコンテナを停止できます。
+
+## 立ち上がりの確認
+ビルドしたdokcerイメージを起動したあと、1分ほどbottle-app-containerとmysql-dbが立ち上がるのを待ったあと、ブラウザやcurlなどで、http://localhost:8080/ にアクセスするとHelloWorldが返ってきます。また、http://localhost:8080/show/hachan にアクセスるとパスワード表示されます。

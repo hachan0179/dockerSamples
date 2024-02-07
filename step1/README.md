@@ -68,3 +68,6 @@ Options:
   -e  --exec      Execute bash in runnig contaicer
   -c  --clear     Delete the docker image
 ```
+
+## 立ち上がりの確認
+ビルドしたdokcerイメージを起動したあと、ブラウザやcurlなどで、http://localhost:8080/ にアクセスするとHelloWorldが返ってきます。
