@@ -34,4 +34,4 @@ docker-compose down
 起動しているコンテナを停止できます。
 
 ## 立ち上がりの確認
-基本的な動作はstep4と同じになりますが、capi.localhostの4000番ポートにncなどするとHello,c-api-container!が返ってきます。
+基本的な動作はstep4と同じになりますが、capi.localhostの4000番ポートにncなどすると"Hello,c-api-container!"が返ってきます。

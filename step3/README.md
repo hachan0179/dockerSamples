@@ -9,7 +9,7 @@ docker-compose内でコンテナ同士を通信させるには、docker-compose.
 step2のものをベースにmysqlを追加しています。./mysql-dbのdockerfileをもとにイメージを作成して、mysql-db-containerとしてコンテナを実行しています。また、mysqlのスキーマの初期設定のファイルをコンテナ内の/docker-entrypoint-initdb.d/に配置しています。今回はまだアカウントまわりは触らずにroot権限のままやるので、mysqlのroot権限のパスワードだけ環境変数から設定しています。
 
 ### app.py (./volumes/bottle-app/app.py)
-step2のものをベースにmysqlと通信させるように変更しています。まず、idとusername、passwordを持つUserテーブルを作成して、一つレコードを登録しています。/show/username にhttpリクエストがあると、mysql-dbと通信して、usernameと同じユーザーを探して、そのユーザーのpasswordを返すようにしています。途中で60秒sleepしているのは、mysql-dbが立ち上がるまで少し時間がかかるため立ち上がる前にアクセスしに行っていしまうとエラーを吐いてプログラムが落ちてしまうためです。
+step2のものをベースにmysqlと通信させるように変更しています。まず、idとusername、passwordを持つUserテーブルを作成して、一つレコードを登録しています。/show/username にhttpリクエストがあると、mysql-dbと通信して、usernameと同じユーザーを探して、そのユーザーのpasswordを返すようにしています。途中で60秒sleepしているのは、mysql-dbが立ち上がるまで少し時間がかかるため立ち上がる前にアクセスしに行っていしまうとエラーを吐いてプログラムが終了しまうためです。
 
 ### init.sql (./volumes/mysql-db/initdb.d/init.sql)
 このファイルはコンテナ内の/docker-entrypoint-initdb.d/に配置され、コンテナが起動するときに実行されます。内容は、sampleという名前のスキーマを作るだけです。
