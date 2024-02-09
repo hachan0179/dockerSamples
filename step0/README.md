@@ -2,8 +2,8 @@
 ここでは、dockerを始めるにあっての環境構築についてなどをまとめています。
 
 ## docker、docker-composeのインストール
-dockerの環境構築に関しては、いかのサイトがとてもわかり易くまとめてあります。
-<https://kinsta.com/jp/blog/install-docker-ubuntu/>
+dockerの環境構築に関しては、以下のサイトがとてもわかり易くまとめてあります。<br>
+<https://kinsta.com/jp/blog/install-docker-ubuntu/><br>
 dockerとdocker-composeのインストールと、dockerのコマンドはOSユーザーグループのdockerグループに所属しないと実行できないので、dockerグループへのユーザー追加をしてください。
 
 ## dockerの基本的なつかいかた
@@ -50,7 +50,7 @@ docker logs <container id> OR <container name>
 docker exec -it <container id> OR <container name> sh
 ```
 
-###　コンテナの停止
+### コンテナの停止
 立ち上げたコンテナを停止するには、コンテナの確認をしたときに表示されるコンテナのIDを使って停止できます。
 ```
 docker stop <container id> OR <container name>
